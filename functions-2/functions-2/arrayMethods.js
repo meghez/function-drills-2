@@ -92,8 +92,12 @@ const monstersInYourPocket = [{"monster":"Bulbabunny","CP":156},{"monster":"Bulb
   Use the filter method to return only the monsters that have a CP of over 200.
 */
 
-// CODE HERE
-const myStrongest // = monstersInYourPocket.filter(/* Provide Your Callback Here */)
+const filteredMonsters = monstersInYourPocket.filter(function(element){
+  return element CP > 200 
+
+})
+const myStrongest // = monstersInYourPocket.filter(element => element > CP 200)
+  console.log(filteredMonsters)
 
 
 
@@ -110,7 +114,7 @@ const orders = [{"price":15,"tax":0.09},{"price":42,"tax":0.07},{"price":56,"tax
   Use a higher order method to get all the order totals after adding in the sales tax (given to you as a tax rate, hint: you'll need to do some multiplication). Your answer should be an array of numbers, one total for each order.
 */
 
-// CODE HERE
+const ordersAdder = x => (y) => x * (y + 1) 
 
 
 
@@ -130,4 +134,4 @@ const purchases = [{"owner":"Barry","price":103},{"owner":"Bob","price":75},
   Use a high order method(s) to create to get the sum of bobsTotal.
 */
 
-// CODE HERE
+const purchasesAdder = 
